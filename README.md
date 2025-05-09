@@ -15,6 +15,7 @@ This project is a lightweight, simplified version of React built from scratch us
   - Nested children
   - Arrays of children
   - Text and numeric nodes
+  - Inline style support (e.g., `{ style: { color: 'green' } }`)
 
 
 ## How it works
