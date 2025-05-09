@@ -4,7 +4,6 @@ import { render } from "./React-Dom";
 import "./App.css";
 
 function Card({ title, image, brand, price }) {
-  console.log(price);
   return (
     <div className="card">
       <img src={image} alt="iphone" />
@@ -22,7 +21,6 @@ function Card({ title, image, brand, price }) {
 fetch("https://dummyjson.com/products")
   .then((res) => res.json())
   .then((data) => {
-    console.log(data)
     render(
       <div className="container">
         {data.products.map((product) => {
