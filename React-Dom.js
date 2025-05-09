@@ -15,7 +15,11 @@ export function render(reactObject, rootElement) {
 
     if (props) {
       Object.entries(props).forEach(function ([key, value]) {
-        if (key !== "children") {
+        if (key === "style") {
+          Object.entries(value).forEach(function ([style, value]) {
+            newElement.style[style] = value;
+          });
+        } else if (key !== "children") {
           newElement[key] = value;
         }
       });

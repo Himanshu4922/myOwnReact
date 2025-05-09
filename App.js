@@ -22,7 +22,7 @@ fetch("https://dummyjson.com/products")
   .then((res) => res.json())
   .then((data) => {
     render(
-      <div className="container">
+      <div className="container" style={{ color: "green" }}>
         {data.products.map((product) => {
           return (
             <Card
