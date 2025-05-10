@@ -44,6 +44,7 @@ export function render(reactObject, rootElement) {
     return newElement;
   }
   const DOMElement = createDOMElement(reactObject);
+  rootElement.innerHTML = "";
   if (Array.isArray(DOMElement)) {
     rootElement.append(...DOMElement);
   } else {

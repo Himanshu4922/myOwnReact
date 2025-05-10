@@ -3,7 +3,7 @@ import { render } from "./React-Dom";
 
 import "./App.css";
 
-function Card({ title, image, brand, price }) {
+export function Card({ title, image, brand, price }) {
   return (
     <div className="card">
       <img src={image} alt="iphone" />
