@@ -1,11 +1,11 @@
 import { render } from "./React-Dom.js";
-import {Card} from "./App";
+import { Card } from "./App";
 
 let states = [];
 let stateIndex = 0;
 export const React = {
   createElement(type, props, ...children) {
-    const reactobject = {
+    const reactObject = {
       type,
       props: {
         ...props,

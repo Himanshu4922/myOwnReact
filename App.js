@@ -21,6 +21,7 @@ export function Card({ title, image, brand, price }) {
 fetch("https://dummyjson.com/products")
   .then((res) => res.json())
   .then((data) => {
+    console.log(data);
     render(
       <div className="container" style={{ color: "green" }}>
         {data.products.map((product) => {

@@ -23,7 +23,7 @@ export function render(reactObject, rootElement) {
           newElement[key] = value;
         }
       });
-      props.children.forEach(function (child) {
+      props?.children?.forEach(function (child) {
         if (typeof child === "string") {
           const textNode = document.createTextNode(child);
           newElement.append(textNode);
